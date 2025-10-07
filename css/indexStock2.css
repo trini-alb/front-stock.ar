@@ -1,0 +1,103 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 323px;
+}
+
+.u-section-1 .u-form-1 {
+  height: 68px;
+  margin: 0 608px 0 -15px;
+}
+
+.u-section-1 .u-btn-1 {
+  background-image: none;
+  border-style: solid;
+}
+
+.u-section-1 .u-table-1 {
+  margin-bottom: 39px;
+  margin-top: 29px;
+}
+
+.u-block-6f88-10 {
+  height: 46px;
+}
+
+.u-section-1 .u-table-cell-1 {
+  background-image: none;
+}
+
+.u-block-6f88-23 {
+  height: 46px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-form-1 {
+    margin-right: 408px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-form-1 {
+    margin-right: 188px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-form-1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+/* Contenedor del usuario arriba a la derecha */
+/* El header será el referente del posicionamiento */
+#header .u-sheet-1 { position: relative; }   /* <- NUEVO (o #header si preferís) */
+
+/* Contenedor del usuario, anclado dentro del header */
+.menu-usuario{
+  position: absolute;        /* antes: fixed */
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+
+/* Ocultar el checkbox */
+.menu-usuario .toggle-menu{ display: none !important; }
+
+/* Avatar */
+.menu-usuario .icono-usuario img{
+  width: 40px !important;      /* ajustá el tamaño a gusto */
+  height: 40px !important;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  object-fit: cover;           /* recorta si la imagen es grande */
+  display: block;
+  cursor: pointer;
+}
+
+/* Dropdown oculto por defecto */
+.menu-usuario .menu-desplegable{
+  display: none;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 6px);
+  min-width: 160px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,.25);
+  overflow: hidden;
+  padding: 4px 0;
+}
+
+/* Ítem Cerrar sesión */
+.menu-usuario .menu-desplegable a{
+  display: block;
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #111;
+  text-decoration: none;
+}
+.menu-usuario .menu-desplegable a:hover{ background:#f1f1f1; }
+
+/* Mostrar el dropdown al pasar el mouse */
+.menu-usuario:hover .menu-desplegable{ display: block; }

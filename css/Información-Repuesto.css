@@ -1,0 +1,294 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 609px;
+}
+
+.u-section-1 .u-table-1 {
+  width: 596px;
+  margin: 44px 57px 0 auto;
+}
+
+.u-block-e70a-13 {
+  height: 46px;
+}
+
+.u-block-e70a-28 {
+  height: 46px;
+}
+
+.u-section-1 .u-icon-1 {
+  width: 53px;
+  height: 53px;
+  margin: -436px auto 0 517px;
+  padding: 0;
+}
+
+.u-section-1 .u-icon-2 {
+  width: 53px;
+  height: 53px;
+  margin: 16px auto 0 517px;
+  padding: 0;
+}
+
+.u-section-1 .u-icon-3 {
+  width: 53px;
+  height: 53px;
+  margin: 25px auto 0 517px;
+  padding: 0;
+}
+
+.u-section-1 .u-icon-4 {
+  width: 52px;
+  height: 52px;
+  margin: 22px auto 0 518px;
+  padding: 0;
+}
+
+.u-section-1 .u-icon-5 {
+  width: 53px;
+  height: 53px;
+  margin: 25px auto 0 517px;
+  padding: 0;
+}
+
+.u-section-1 .u-icon-6 {
+  width: 53px;
+  height: 53px;
+  margin: 18px auto 0 517px;
+  padding: 0;
+}
+
+.u-section-1 .u-text-1 {
+  margin: -423px auto 0 0;
+}
+
+.u-section-1 .u-custom-html-1 {
+  height: auto;
+  min-height: 114px;
+  background-image: none;
+  margin: 90px 729px 0 75px;
+}
+
+.u-section-1 .u-text-2 {
+  margin: 76px auto 60px 0;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-icon-1 {
+    margin-left: 426px;
+  }
+
+  .u-section-1 .u-icon-2 {
+    margin-left: 426px;
+  }
+
+  .u-section-1 .u-icon-3 {
+    margin-left: 426px;
+  }
+
+  .u-section-1 .u-icon-4 {
+    margin-left: 427px;
+  }
+
+  .u-section-1 .u-icon-5 {
+    margin-left: 426px;
+  }
+
+  .u-section-1 .u-icon-6 {
+    margin-left: 426px;
+  }
+
+  .u-section-1 .u-custom-html-1 {
+    margin-right: 604px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-icon-1 {
+    margin-left: 326px;
+  }
+
+  .u-section-1 .u-icon-2 {
+    margin-left: 326px;
+  }
+
+  .u-section-1 .u-icon-3 {
+    margin-left: 326px;
+  }
+
+  .u-section-1 .u-icon-4 {
+    margin-left: 327px;
+  }
+
+  .u-section-1 .u-icon-5 {
+    margin-left: 326px;
+  }
+
+  .u-section-1 .u-icon-6 {
+    margin-left: 326px;
+  }
+
+  .u-section-1 .u-custom-html-1 {
+    margin-right: 384px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-table-1 {
+    width: 540px;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-icon-1 {
+    margin-left: 245px;
+  }
+
+  .u-section-1 .u-icon-2 {
+    margin-left: 245px;
+  }
+
+  .u-section-1 .u-icon-3 {
+    margin-left: 245px;
+  }
+
+  .u-section-1 .u-icon-4 {
+    margin-left: 245px;
+  }
+
+  .u-section-1 .u-icon-5 {
+    margin-left: 245px;
+  }
+
+  .u-section-1 .u-icon-6 {
+    margin-left: 245px;
+  }
+
+  .u-section-1 .u-custom-html-1 {
+    margin-right: 204px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-table-1 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-icon-1 {
+    margin-left: 154px;
+  }
+
+  .u-section-1 .u-icon-2 {
+    margin-left: 154px;
+  }
+
+  .u-section-1 .u-icon-3 {
+    margin-left: 154px;
+  }
+
+  .u-section-1 .u-icon-4 {
+    margin-left: 154px;
+  }
+
+  .u-section-1 .u-icon-5 {
+    margin-left: 154px;
+  }
+
+  .u-section-1 .u-icon-6 {
+    margin-left: 154px;
+  }
+
+  .u-section-1 .u-custom-html-1 {
+    margin-right: 4px;
+  }
+}
+/* Contenedor del usuario arriba a la derecha */
+/* El header será el referente del posicionamiento */
+#header .u-sheet-1 { position: relative; }   /* <- NUEVO (o #header si preferís) */
+
+/* Contenedor del usuario, anclado dentro del header */
+.menu-usuario{
+  position: absolute;        /* antes: fixed */
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+
+/* Ocultar el checkbox */
+.menu-usuario .toggle-menu{ display: none !important; }
+
+/* Avatar */
+.menu-usuario .icono-usuario img{
+  width: 40px !important;      /* ajustá el tamaño a gusto */
+  height: 40px !important;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  object-fit: cover;           /* recorta si la imagen es grande */
+  display: block;
+  cursor: pointer;
+}
+
+/* Dropdown oculto por defecto */
+.menu-usuario .menu-desplegable{
+  display: none;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 6px);
+  min-width: 160px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,.25);
+  overflow: hidden;
+  padding: 4px 0;
+}
+
+/* Ítem Cerrar sesión */
+.menu-usuario .menu-desplegable a{
+  display: block;
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #111;
+  text-decoration: none;
+}
+.menu-usuario .menu-desplegable a:hover{ background:#f1f1f1; }
+
+/* Mostrar el dropdown al pasar el mouse */
+.menu-usuario:hover .menu-desplegable{ display: block; }
+/* ===== Drawer lateral ===== */
+.drawer{
+  position: fixed; top: 0; left: 0; bottom: 0;
+  width: 280px; max-width: 86vw; height: 100vh;
+  background: #111; color: #fff;
+  transform: translateX(-100%); transition: transform .28s ease;
+  z-index: 12500; display:flex; flex-direction:column;
+  box-shadow: 2px 0 18px rgba(0,0,0,.35);
+}
+.drawer.open{ transform: translateX(0); }
+
+.drawer-head{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:14px 16px; border-bottom:1px solid rgba(255,255,255,.12);
+}
+.drawer-head strong{ font-size:16px; }
+.drawer-close{ background:transparent; color:#fff; border:0; font-size:24px; cursor:pointer; line-height:1; }
+
+.drawer-nav{ padding:10px 8px; display:flex; flex-direction:column; gap:4px; }
+.drawer-nav a{
+  color:#fff; text-decoration:none; font-size:15px;
+  padding:10px 12px; border-radius:6px;
+}
+.drawer-nav a:hover{ background: rgba(255,255,255,.08); }
+
+/* Backdrop */
+.drawer-backdrop{
+  position: fixed; inset:0; background:rgba(0,0,0,.45);
+  z-index:12400; opacity:0; pointer-events:none; transition:opacity .28s ease;
+}
+.drawer-backdrop.show{ opacity:1; pointer-events:auto; }
+
+/* Bloqueo de scroll cuando está abierto */
+html.drawer-open, body.drawer-open{ overflow:hidden; }
+
+/* Aseguramos que el header quede por encima del contenido pero debajo del botón */
+#header{ position: sticky; top:0; z-index:12000; }

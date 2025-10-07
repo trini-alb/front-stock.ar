@@ -1,0 +1,28 @@
+# Archivos del editor
+.vscode/
+.idea/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos temporales o de caché
+*.log
+*.tmp
+*.bak
+
+# Archivos de dependencias (si alguna vez usás npm)
+node_modules/
+
+# Archivos de compilación (por si usás herramientas tipo SASS o TypeScript)
+dist/
+build/
+
+# Archivos de entorno (por si luego agregás variables de entorno)
+.env
+.env.local
+.env.*.local
+
+# Archivos ZIP o exportaciones
+*.zip
+*.rar
