@@ -211,3 +211,16 @@ html.drawer-open, body.drawer-open{ overflow:hidden; }
 
 /* Aseguramos que el header quede por encima del contenido pero debajo del botón */
 #header{ position: sticky; top:0; z-index:12000; }
+
+/* Asegura que el botón hamburguesa quede por encima del backdrop y reciba clicks */
+.u-hamburger-link-1{
+  position: relative;
+  z-index: 13000;
+}
+
+/* Si el off-canvas de Nicepage se abre, lo desactivamos en esta página */
+#f3cb{ display: none !important; }
+
+/* (Opcional) el header fijo por encima del contenido, pero debajo del drawer/backdrop */
+#header{ position: sticky; top:0; z-index: 12000; }
+

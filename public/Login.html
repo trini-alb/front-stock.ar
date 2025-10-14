@@ -8,7 +8,7 @@
   <title>Iniciar Sesión</title>
 
   <link rel="stylesheet" href="css/nicepage.css" media="screen">
-  <link rel="stylesheet" href="css/login.css" media="screen">
+  <link rel="stylesheet" href="css/login.css?v=6" media="screen">
 
   <script class="u-script" type="text/javascript" src="jquery.js" defer></script>
   <script class="u-script" type="text/javascript" src="nicepage.js" defer></script>
@@ -23,10 +23,6 @@
     <!-- Logo arriba a la derecha -->
     <img class="logo-sistema" src="images/logo-Photoroom.png" alt="Logo del sistema" width="120" height="120">
 
-    <!-- (Si también querés el logo centrado grande, dejá esta imagen) -->
-    <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-1"
-         src="images/logo-Photoroom.png" alt="Logo" data-image-width="500" data-image-height="500">
-
     <div class="u-container-style u-group u-radius u-shape-round u-white u-group-1" role="form" aria-labelledby="titulo-login">
       <div class="u-container-layout u-container-layout-1">
 
@@ -37,11 +33,6 @@
         </div>
 
         <div class="custom-expanded u-form u-radius u-form-1" id="form-login">
-          <form action="https://forms.nicepagesrv.com/v2/form/process"
-                class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form"
-                source="email" name="form"
-                style="padding: 10px;"
-                autocomplete="on" novalidate>
 
             <!-- Email -->
             <div class="u-form-group u-form-name">
@@ -91,8 +82,12 @@
           </form>
         </div>
 
-        <h6 class="u-text u-text-black u-text-default u-text-2">¿No tienes cuenta?</h6>
-        <a href="Registro.html" class="u-btn u-btn-rectangle u-button-style u-btn-2">Regístrate aquí</a>
+        <p class="login-helper">
+          ¿No tienes cuenta?
+          <a class="login-link" href="Registro.html">Regístrate aquí</a>
+        </p>
+
+
       </div>
     </div>
   </section>
