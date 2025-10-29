@@ -8,55 +8,17 @@
   margin: 37px auto 0 116px;
 }
 
-.u-section-1 .u-btn-1 {
-  --radius: 6px;
-  font-size: 1.875rem;
-  background-image: none;
-  border-style: solid;
-  font-weight: 400;
-  margin: -407px 185px 0 auto;
-  padding: 22px 25px 23px 24px;
-}
-
-.u-section-1 .u-btn-2 {
-  --radius: 6px;
-  font-size: 1.875rem;
-  background-image: none;
-  border-style: solid;
-  font-weight: 400;
-  margin: 20px 186px 0 auto;
-  padding: 22px 31px 23px 29px;
-}
-
-.u-section-1 .u-btn-3 {
-  --radius: 6px;
-  font-size: 1.875rem;
-  background-image: none;
-  border-style: solid;
-  font-weight: 400;
-  margin: 131px 183px 0 auto;
-  padding: 22px 48px 23px 47px;
-}
-
-.u-section-1 .u-btn-4 {
-  --radius: 6px;
-  font-size: 1.875rem;
-  background-image: none;
-  border-style: solid;
-  font-weight: 400;
-  margin: -202px 185px 0 auto;
-  padding: 22px 20px 23px 19px;
-}
-
-.u-section-1 .u-btn-5 {
-  --radius: 6px;
-  font-size: 1.875rem;
-  background-image: none;
-  border-style: solid;
-  font-weight: 400;
-  margin: 131px 182px 37px auto;
-  padding: 22px 51px 23px;
-}
+ .u-section-1 .u-btn-1,
+  .u-section-1 .u-btn-2,
+  .u-section-1 .u-btn-3,
+  .u-section-1 .u-btn-4,
+  .u-section-1 .u-btn-5{
+    width: min(420px, 92vw);    /* botón más angosto en móvil */
+    margin: 12px auto 0;        /* centra la columna en móvil */
+    font-size: 1.1rem;
+    padding: 12px 18px;
+    border-radius: 50px;
+  }
 
 @media (max-width: 1199px) {
   .u-section-1 .u-btn-1 {
