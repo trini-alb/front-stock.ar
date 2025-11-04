@@ -188,3 +188,4 @@ html.drawer-open, body.drawer-open{ overflow:hidden; }
 
 /* Aseguramos que el header quede por encima del contenido pero debajo del botón */
 #header{ position: sticky; top:0; z-index:12000; }
+

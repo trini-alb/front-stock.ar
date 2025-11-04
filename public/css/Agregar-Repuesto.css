@@ -87,7 +87,7 @@
   border-style: solid;
 }
 
-@media (max-width: 1199px) {
+/*@media (max-width: 1199px) {
   .u-section-1 .u-custom-html-1 {
     margin-right: 598px;
     margin-left: 0;
@@ -119,7 +119,7 @@
   .u-section-1 .u-custom-html-1 {
     margin-right: 0;
   }
-}
+}*/
 
 /* Contenedor del usuario arriba a la derecha */
 /* El header será el referente del posicionamiento */
@@ -223,4 +223,15 @@ html.drawer-open, body.drawer-open{ overflow:hidden; }
 
 /* (Opcional) el header fijo por encima del contenido, pero debajo del drawer/backdrop */
 #header{ position: sticky; top:0; z-index: 12000; }
+/* ↓ PEGAR AL FINAL PARA REDUCIR EL ESPACIO SUPERIOR ↓ */
+.u-section-1 .u-sheet-1{
+  padding-top: 0px !important;   /* reduce el colchón interno del contenedor */
+}
 
+.u-section-1 .u-custom-html-1{
+  margin-top: 0px !important;   /* antes tenías ~368px */
+}
+
+.u-section-1 .u-form-1{
+  margin-top: 0px !important;   /* antes tenías -436px */
+}
