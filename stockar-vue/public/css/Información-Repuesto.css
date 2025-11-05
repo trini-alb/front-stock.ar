@@ -1,136 +1,206 @@
 .u-section-1 .u-sheet-1 {
-  display: flex;
-  align-items: flex-start;
-  gap: 40px;
-  min-height: 850px;
+  min-height: 609px;
+}
+
+.u-section-1 .u-table-1 {
+  width: 596px;
+  margin: 44px 57px 0 auto;
+}
+
+.u-block-e70a-13 {
+  height: 46px;
+}
+
+.u-block-e70a-28 {
+  height: 46px;
+}
+
+.u-section-1 .u-icon-1 {
+  width: 53px;
+  height: 53px;
+  margin: -436px auto 0 517px;
+  padding: 0;
+}
+
+.u-section-1 .u-icon-2 {
+  width: 53px;
+  height: 53px;
+  margin: 16px auto 0 517px;
+  padding: 0;
+}
+
+.u-section-1 .u-icon-3 {
+  width: 53px;
+  height: 53px;
+  margin: 25px auto 0 517px;
+  padding: 0;
+}
+
+.u-section-1 .u-icon-4 {
+  width: 52px;
+  height: 52px;
+  margin: 22px auto 0 518px;
+  padding: 0;
+}
+
+.u-section-1 .u-icon-5 {
+  width: 53px;
+  height: 53px;
+  margin: 25px auto 0 517px;
+  padding: 0;
+}
+
+.u-section-1 .u-icon-6 {
+  width: 53px;
+  height: 53px;
+  margin: 18px auto 0 517px;
+  padding: 0;
+}
+
+.u-section-1 .u-text-1 {
+  margin: -423px auto 0 0;
 }
 
 .u-section-1 .u-custom-html-1 {
   height: auto;
   min-height: 114px;
   background-image: none;
-  margin: 40px 40px 0 40px;
+  margin: 90px 729px 0 75px;
 }
 
-.u-section-1 .u-form-1 {
-  flex: 1 1 400px;
-  min-width: 350px;
-  max-width: 500px;
-  margin: 40px 40px 0 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-.contenedor {
-      width: 300px;
-      margin: 40px auto;
-      text-align: center;
-      font-family: sans-serif;
-    }
-    .preview {
-      width: 100%;
-      height: 200px;
-      border: 2px dashed #ccc;
-      border-radius: 10px;
-      margin-bottom: 15px;
-      background-color: #bd0000;
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #999;
-      font-size: 14px;
-    }
-    
-    
-    input[type="file"] {
-      display: none;
-    }
-    .boton-subir {
-      background-color: #bd0000;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-    .boton-subir:hover {
-      background-color: #ffcdcd;
-    }
-
-.preview img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;          
-  display: block;
-}
-.u-section-1 .u-form-group-3 {
-  margin-left: 0;
+.u-section-1 .u-text-2 {
+  margin: 76px auto 60px 0;
 }
 
-.u-section-1 .u-form-group-4 {
-  margin-left: 0;
-}
-
-.u-section-1 .u-form-group-6 {
-  margin-left: 0;
-}
-
-.u-section-1 .u-form-group-7 {
-  margin-left: 0;
-}
-
-.u-section-1 .u-form-group-8 {
-  margin-left: 0;
-}
-
-.u-section-1 .u-form-group-9 {
-  width: 100%;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.u-section-1 .u-btn-1 {
-  background-image: none;
-  border-style: solid;
-}
-
-/*@media (max-width: 1199px) {
-  .u-section-1 .u-custom-html-1 {
-    margin-right: 598px;
-    margin-left: 0;
+@media (max-width: 1199px) {
+  .u-section-1 .u-icon-1 {
+    margin-left: 426px;
   }
 
-  .u-section-1 .u-form-1 {
-    margin-right: 0;
-    margin-left: 220px;
+  .u-section-1 .u-icon-2 {
+    margin-left: 426px;
+  }
+
+  .u-section-1 .u-icon-3 {
+    margin-left: 426px;
+  }
+
+  .u-section-1 .u-icon-4 {
+    margin-left: 427px;
+  }
+
+  .u-section-1 .u-icon-5 {
+    margin-left: 426px;
+  }
+
+  .u-section-1 .u-icon-6 {
+    margin-left: 426px;
+  }
+
+  .u-section-1 .u-custom-html-1 {
+    margin-right: 604px;
+    margin-left: 0;
   }
 }
 
 @media (max-width: 991px) {
-  .u-section-1 .u-custom-html-1 {
-    margin-right: 378px;
+  .u-section-1 .u-icon-1 {
+    margin-left: 326px;
   }
 
-  .u-section-1 .u-form-1 {
-    margin-left: 0;
+  .u-section-1 .u-icon-2 {
+    margin-left: 326px;
+  }
+
+  .u-section-1 .u-icon-3 {
+    margin-left: 326px;
+  }
+
+  .u-section-1 .u-icon-4 {
+    margin-left: 327px;
+  }
+
+  .u-section-1 .u-icon-5 {
+    margin-left: 326px;
+  }
+
+  .u-section-1 .u-icon-6 {
+    margin-left: 326px;
+  }
+
+  .u-section-1 .u-custom-html-1 {
+    margin-right: 384px;
   }
 }
 
 @media (max-width: 767px) {
+  .u-section-1 .u-table-1 {
+    width: 540px;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-icon-1 {
+    margin-left: 245px;
+  }
+
+  .u-section-1 .u-icon-2 {
+    margin-left: 245px;
+  }
+
+  .u-section-1 .u-icon-3 {
+    margin-left: 245px;
+  }
+
+  .u-section-1 .u-icon-4 {
+    margin-left: 245px;
+  }
+
+  .u-section-1 .u-icon-5 {
+    margin-left: 245px;
+  }
+
+  .u-section-1 .u-icon-6 {
+    margin-left: 245px;
+  }
+
   .u-section-1 .u-custom-html-1 {
-    margin-right: 198px;
+    margin-right: 204px;
   }
 }
 
 @media (max-width: 575px) {
-  .u-section-1 .u-custom-html-1 {
-    margin-right: 0;
+  .u-section-1 .u-table-1 {
+    width: 340px;
   }
-}*/
 
+  .u-section-1 .u-icon-1 {
+    margin-left: 154px;
+  }
+
+  .u-section-1 .u-icon-2 {
+    margin-left: 154px;
+  }
+
+  .u-section-1 .u-icon-3 {
+    margin-left: 154px;
+  }
+
+  .u-section-1 .u-icon-4 {
+    margin-left: 154px;
+  }
+
+  .u-section-1 .u-icon-5 {
+    margin-left: 154px;
+  }
+
+  .u-section-1 .u-icon-6 {
+    margin-left: 154px;
+  }
+
+  .u-section-1 .u-custom-html-1 {
+    margin-right: 4px;
+  }
+}
 /* Contenedor del usuario arriba a la derecha */
 /* El header será el referente del posicionamiento */
 #header .u-sheet-1 { position: relative; }   /* <- NUEVO (o #header si preferís) */
@@ -143,6 +213,7 @@
   transform: translateY(-50%);
   z-index: 1000;
 }
+
 
 /* Ocultar el checkbox */
 .menu-usuario .toggle-menu{ display: none !important; }
@@ -221,27 +292,3 @@ html.drawer-open, body.drawer-open{ overflow:hidden; }
 
 /* Aseguramos que el header quede por encima del contenido pero debajo del botón */
 #header{ position: sticky; top:0; z-index:12000; }
-
-/* Asegura que el botón hamburguesa quede por encima del backdrop y reciba clicks */
-.u-hamburger-link-1{
-  position: relative;
-  z-index: 13000;
-}
-
-/* Si el off-canvas de Nicepage se abre, lo desactivamos en esta página */
-#f3cb{ display: none !important; }
-
-/* (Opcional) el header fijo por encima del contenido, pero debajo del drawer/backdrop */
-#header{ position: sticky; top:0; z-index: 12000; }
-/* ↓ PEGAR AL FINAL PARA REDUCIR EL ESPACIO SUPERIOR ↓ */
-.u-section-1 .u-sheet-1{
-  padding-top: 0px !important;   /* reduce el colchón interno del contenedor */
-}
-
-.u-section-1 .u-custom-html-1{
-  margin-top: 0px !important;   /* antes tenías ~368px */
-}
-
-.u-section-1 .u-form-1{
-  margin-top: 0px !important;   /* antes tenías -436px */
-}

@@ -1,0 +1,195 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 609px;
+}
+
+.u-section-1 .u-image-1 {
+  width: 407px;
+  height: 407px;
+  margin: 37px auto 0 116px;
+}
+
+ .u-section-1 .u-btn-1,
+  .u-section-1 .u-btn-2,
+  .u-section-1 .u-btn-3,
+  .u-section-1 .u-btn-4,
+  .u-section-1 .u-btn-5{
+    width: min(420px, 92vw);    /* botón más angosto en móvil */
+    margin: 12px auto 0;        /* centra la columna en móvil */
+    font-size: 1.1rem;
+    padding: 12px 18px;
+    border-radius: 50px;
+  }
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-btn-1 {
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-btn-2 {
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-btn-3 {
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-btn-4 {
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-btn-5 {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 542px;
+  }
+
+  .u-section-1 .u-image-1 {
+    width: 340px;
+    height: 340px;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-top: -340px;
+  }
+}
+/* Contenedor del usuario arriba a la derecha */
+/* El header será el referente del posicionamiento */
+#header {
+  position: relative;
+  min-height: 64x; /* Ajusta según el diseño */
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  /*display: flex;
+  align-items: center;
+  justify-content: center;*/
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 98vw;
+  margin: 0 auto;
+  padding: 0 32px;
+  height: 64px;
+  position: relative;
+}
+.header-title {
+  flex: 1;
+  text-align: center;
+  color: #fff;
+  font-size: 2rem !important; /* Prueba con 2rem, puedes ajustar a 1.5rem o 1.8rem */
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 1px;
+}
+#header .u-sheet-1 { 
+  position: relative;
+  width: 100%;
+  height: 100%; 
+}   /* <- NUEVO (o #header si preferís) */
+
+.hamburger-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+/* Contenedor del usuario, anclado dentro del header */
+.menu-usuario{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+
+/* Ocultar el checkbox */
+.menu-usuario .toggle-menu{ display: none !important; }
+
+/* Avatar */
+.menu-usuario .icono-usuario img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  display: block;
+  transition: box-shadow 0.2s;
+}
+.menu-usuario .cerrar-sesion {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+/* Dropdown oculto por defecto */
+.menu-usuario .menu-desplegable{
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  padding: 8px 24px;
+  min-width: 120px;
+  z-index: 1001;
+}
+
+/* Ítem Cerrar sesión */
+.menu-usuario .menu-desplegable a{
+  color: #000000;
+  text-decoration: none;
+  font-size: 0.7rem;
+  display: block;
+  text-align: center;
+  padding: 6px 0;
+}
+.menu-usuario:hover .menu-desplegable,
+.menu-usuario .menu-desplegable:hover {
+  display: block;
+}
+/* Mostrar el dropdown al pasar el mouse */
+
+.drawer{
+  position: fixed; top: 0; left: 0; bottom: 0;
+  width: 280px; max-width: 86vw; height: 100vh;
+  background: #0a0a0a; color: #fff;
+  transform: translateX(-100%); transition: transform .28s ease;
+  z-index: 12500; display:flex; flex-direction:column;
+  box-shadow: 2px 0 18px rgba(0,0,0,.35);
+}
+.drawer.open{ transform: translateX(0); }
+
+.drawer-head{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:14px 16px; border-bottom:1px solid rgba(255,255,255,.12);
+}
+.drawer-head strong{ font-size:16px; }
+.drawer-close{ background:transparent; color:#fff; border:0; font-size:24px; cursor:pointer; line-height:1; }
+
+.drawer-nav{ padding:10px 8px; display:flex; flex-direction:column; gap:4px; }
+.drawer-nav a{
+  color:#fff; text-decoration:none; font-size:15px;
+  padding:10px 12px; border-radius:6px;
+}
+.drawer-nav a:hover{ background: rgba(255,255,255,.08); }
+
+/* Backdrop */
+.drawer-backdrop{
+  position: fixed; inset:0; background:rgba(0,0,0,.45);
+  z-index:12400; opacity:0; pointer-events:none; transition:opacity .28s ease;
+}
+.drawer-backdrop.show{ opacity:1; pointer-events:auto; }
+
+/* Bloqueo de scroll cuando está abierto */
+html.drawer-open, body.drawer-open{ overflow:hidden; }

@@ -4,7 +4,7 @@ const express = require('express');
 const compression = require('compression');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5500;
 
 const publicDir = path.resolve(__dirname, 'public');
 

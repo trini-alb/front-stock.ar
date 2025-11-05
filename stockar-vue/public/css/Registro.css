@@ -1,0 +1,158 @@
+/* ===== FONDO ===== */
+.u-section-1{
+  background-image: url("../images/Login1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  /* centrar la tarjeta */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px 40px;
+  position: relative;
+}
+
+/* velo blanco suave para aclarar */
+.u-section-1::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,.30);
+  z-index: 0;
+}
+
+/* Logo arriba a la derecha */
+.logo-sistema{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 120px;
+  height: auto;
+  z-index: 2;
+}
+
+/* Si Nicepage mete un logo grande centrado, ocultalo */
+.u-section-1 .u-image-1{ display: none; }
+
+/* ===== TARJETA ===== */
+.u-section-1 .u-group-1{
+  width: 820px;
+  max-width: 92vw;
+  background: #fff;
+  border-radius: 22px;
+  border: 1.5px dashed #d6d6d6;
+  box-shadow: 0 8px 28px rgba(0,0,0,.15);
+  padding: 28px 40px 26px;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+}
+.u-section-1 .u-container-layout-1{ padding: 0 !important; }
+
+/* ===== TÍTULO ROJO CENTRADO ===== */
+.u-section-1 .u-group-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 18px 0;
+  background: transparent !important;
+}
+.u-section-1 .u-text-1{
+  margin: 0;
+  display: inline-block;
+  padding: 10px 26px;
+  background: #bd0000;
+  color: #fff;
+  border-radius: 12px;
+  line-height: 1.1;
+  font-size: 3.25rem;          /* ~52px */
+  text-align: center;
+}
+
+/* ===== FORMULARIO ===== */
+.u-section-1 .u-form-1{ margin: 0 !important; }
+
+/* Labels arriba de cada campo */
+#form-login label.u-label{
+  display: block;
+  margin: 8px 0 6px 6px;
+  font-weight: 500;
+}
+
+/* Campos con EXACTAMENTE el mismo tamaño */
+#form-login .u-input-1,
+#form-login .u-input-2{
+  width: 100% !important;
+  box-sizing: border-box;
+  height: 54px !important;
+  border-radius: 26px !important;
+  background: #e9e9e9 !important;
+  border: 1px solid #cfcfcf !important;
+  font-size: 1rem;
+  padding: 12px 20px !important;   /* base */
+  outline: none;
+  transition: box-shadow .15s, border-color .15s;
+}
+#form-login .u-input-1:focus,
+#form-login .u-input-2:focus{
+  border-color:#bd0000 !important;
+  box-shadow:0 0 0 3px rgba(189,0,0,.15);
+}
+
+/* Dejar espacio para el ojo SOLO en contraseña */
+#form-login .u-input-2{
+  padding-right: 58px !important;
+}
+
+/* Ojo dentro del input contraseña */
+#form-login .password-container{ position: relative; }
+#form-login .toggle-pass{
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  appearance: none; -webkit-appearance: none;
+  background: transparent;
+  border: 0;
+  width: 28px; height: 28px;
+  padding: 0;
+  display: grid; place-items: center;
+  cursor: pointer;
+  line-height: 0;
+}
+#form-login .toggle-pass img{
+  width: 22px; height: 22px; display: block; opacity: .9;
+}
+#form-login .toggle-pass:hover img{ opacity: 1; }
+
+/* Separación entre grupos */
+#form-login .u-form-group{ margin-bottom: 18px !important; }
+
+/* ===== BOTÓN ===== */
+.u-section-1 .u-btn-1{
+  background: #bd0000 !important;
+  color:#fff !important;
+  border: 1px solid #a10000 !important;
+  border-radius: 12px !important;
+  font-size: 1.05rem;
+  padding: 10px 28px;
+  text-transform: none;
+  margin-top: 4px;
+}
+.u-section-1 .u-btn-1:hover{ filter: brightness(.96); }
+
+/* ===== Línea “¿No tienes cuenta?” centrada ===== */
+.login-helper{
+  margin: 12px 0 0;
+  text-align: center;
+  font-size: 1rem;
+}
+.login-link{
+  color: #1a73e8 !important;
+  text-decoration: underline !important;
+  font-weight: 600;
+}
+
+

@@ -1,7 +1,4 @@
 .u-section-1 .u-sheet-1 {
-  display: flex;
-  align-items: flex-start;
-  gap: 40px;
   min-height: 850px;
 }
 
@@ -9,17 +6,12 @@
   height: auto;
   min-height: 114px;
   background-image: none;
-  margin: 40px 40px 0 40px;
+  margin: 368px 779px 0 19px;
 }
 
 .u-section-1 .u-form-1 {
-  flex: 1 1 400px;
-  min-width: 350px;
-  max-width: 500px;
-  margin: 40px 40px 0 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
+  height: 758px;
+  margin: -436px 33px 46px 387px;
 }
 .contenedor {
       width: 300px;
@@ -87,9 +79,7 @@
 }
 
 .u-section-1 .u-form-group-9 {
-  width: 100%;
   margin-left: 0;
-  margin-right: 0;
 }
 
 .u-section-1 .u-btn-1 {

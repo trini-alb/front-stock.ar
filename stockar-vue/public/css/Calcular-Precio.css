@@ -1,95 +1,35 @@
 .u-section-1 .u-sheet-1 {
-  display: flex;
-  align-items: flex-start;
-  gap: 40px;
-  min-height: 850px;
+  min-height: 443px;
 }
 
-.u-section-1 .u-custom-html-1 {
-  height: auto;
-  min-height: 114px;
-  background-image: none;
-  margin: 40px 40px 0 40px;
+.u-section-1 .u-image-1 {
+  width: 156px;
+  height: 300px;
+  margin: 56px auto 0 25px;
+}
+
+.u-section-1 .u-image-2 {
+  width: 156px;
+  height: 300px;
+  margin: -300px 14px 0 auto;
 }
 
 .u-section-1 .u-form-1 {
-  flex: 1 1 400px;
-  min-width: 350px;
-  max-width: 500px;
-  margin: 40px 40px 0 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
+  height: 331px;
+  width: 570px;
+  margin: -300px auto 56px;
 }
-.contenedor {
-      width: 300px;
-      margin: 40px auto;
-      text-align: center;
-      font-family: sans-serif;
-    }
-    .preview {
-      width: 100%;
-      height: 200px;
-      border: 2px dashed #ccc;
-      border-radius: 10px;
-      margin-bottom: 15px;
-      background-color: #bd0000;
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #999;
-      font-size: 14px;
-    }
-    
-    
-    input[type="file"] {
-      display: none;
-    }
-    .boton-subir {
-      background-color: #bd0000;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-    .boton-subir:hover {
-      background-color: #ffcdcd;
-    }
 
-.preview img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;          
-  display: block;
+.u-section-1 .u-form-group-1 {
+  margin-left: 0;
 }
+
+.u-section-1 .u-form-group-2 {
+  margin-left: 0;
+}
+
 .u-section-1 .u-form-group-3 {
   margin-left: 0;
-}
-
-.u-section-1 .u-form-group-4 {
-  margin-left: 0;
-}
-
-.u-section-1 .u-form-group-6 {
-  margin-left: 0;
-}
-
-.u-section-1 .u-form-group-7 {
-  margin-left: 0;
-}
-
-.u-section-1 .u-form-group-8 {
-  margin-left: 0;
-}
-
-.u-section-1 .u-form-group-9 {
-  width: 100%;
-  margin-left: 0;
-  margin-right: 0;
 }
 
 .u-section-1 .u-btn-1 {
@@ -97,40 +37,66 @@
   border-style: solid;
 }
 
-/*@media (max-width: 1199px) {
-  .u-section-1 .u-custom-html-1 {
-    margin-right: 598px;
-    margin-left: 0;
+@media (max-width: 1199px) {
+  .u-section-1 .u-form-group-1 {
+    height: 124px;
+    margin: -257px 201px 60px 169px;
   }
 
-  .u-section-1 .u-form-1 {
-    margin-right: 0;
-    margin-left: 220px;
+  .u-section-1 .u-form-group-2 {
+    height: 124px;
+    margin: -257px 201px 60px 169px;
+  }
+
+  .u-section-1 .u-form-group-3 {
+    height: 124px;
+    margin: -257px 201px 60px 169px;
   }
 }
 
 @media (max-width: 991px) {
-  .u-section-1 .u-custom-html-1 {
-    margin-right: 378px;
+  .u-section-1 .u-form-group-1 {
+    margin-right: 91px;
+    margin-left: 59px;
   }
 
-  .u-section-1 .u-form-1 {
-    margin-left: 0;
+  .u-section-1 .u-form-group-2 {
+    margin-right: 91px;
+    margin-left: 59px;
+  }
+
+  .u-section-1 .u-form-group-3 {
+    margin-right: 91px;
+    margin-left: 59px;
   }
 }
 
 @media (max-width: 767px) {
-  .u-section-1 .u-custom-html-1 {
-    margin-right: 198px;
+  .u-section-1 .u-form-1 {
+    width: 540px;
+  }
+
+  .u-section-1 .u-form-group-1 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-form-group-2 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-form-group-3 {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
 @media (max-width: 575px) {
-  .u-section-1 .u-custom-html-1 {
-    margin-right: 0;
+  .u-section-1 .u-form-1 {
+    width: 340px;
   }
-}*/
-
+}
 /* Contenedor del usuario arriba a la derecha */
 /* El header será el referente del posicionamiento */
 #header .u-sheet-1 { position: relative; }   /* <- NUEVO (o #header si preferís) */
@@ -143,6 +109,7 @@
   transform: translateY(-50%);
   z-index: 1000;
 }
+
 
 /* Ocultar el checkbox */
 .menu-usuario .toggle-menu{ display: none !important; }
@@ -222,26 +189,3 @@ html.drawer-open, body.drawer-open{ overflow:hidden; }
 /* Aseguramos que el header quede por encima del contenido pero debajo del botón */
 #header{ position: sticky; top:0; z-index:12000; }
 
-/* Asegura que el botón hamburguesa quede por encima del backdrop y reciba clicks */
-.u-hamburger-link-1{
-  position: relative;
-  z-index: 13000;
-}
-
-/* Si el off-canvas de Nicepage se abre, lo desactivamos en esta página */
-#f3cb{ display: none !important; }
-
-/* (Opcional) el header fijo por encima del contenido, pero debajo del drawer/backdrop */
-#header{ position: sticky; top:0; z-index: 12000; }
-/* ↓ PEGAR AL FINAL PARA REDUCIR EL ESPACIO SUPERIOR ↓ */
-.u-section-1 .u-sheet-1{
-  padding-top: 0px !important;   /* reduce el colchón interno del contenedor */
-}
-
-.u-section-1 .u-custom-html-1{
-  margin-top: 0px !important;   /* antes tenías ~368px */
-}
-
-.u-section-1 .u-form-1{
-  margin-top: 0px !important;   /* antes tenías -436px */
-}

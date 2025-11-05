@@ -33,7 +33,7 @@
         </div>
 
         <div class="custom-expanded u-form u-radius u-form-1" id="form-login">
-
+          <form action="#" method="post" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" autocomplete="on" novalidate>
             <!-- Email -->
             <div class="u-form-group u-form-name">
               <label for="email" class="u-label">Email</label>
@@ -47,7 +47,8 @@
                 inputmode="email"
                 autocapitalize="off"
                 spellcheck="false"
-                autocomplete="username">
+                autocomplete="username"
+                data-testid="login-email"> <!-- para hacer el test -->
             </div>
 
             <!-- Contraseña -->
@@ -60,7 +61,8 @@
                 placeholder="Introduzca la contraseña"
                 class="u-border-black u-grey-10 u-input u-input-rectangle u-radius u-input-2"
                 required
-                autocomplete="current-password">
+                autocomplete="current-password"
+                data-testid="login-password">
               <button
                 type="button"
                 class="toggle-pass"
@@ -72,8 +74,17 @@
             </div>
 
             <!-- Botón enviar -->
+           <!-- Botón enviar -->
             <div class="u-align-center u-form-group u-form-submit">
-              <button type="submit" class="u-btn u-btn-submit u-button-style u-radius u-btn-1">Iniciar Sesión</button>
+              <button
+                id="login-submit"
+                type="submit"
+                class="u-btn u-btn-submit u-button-style u-radius u-btn-1"
+                data-testid="login-submit"
+                disabled
+                aria-disabled="true">
+                Iniciar Sesión
+              </button>
             </div>
 
             <!-- Mensajes -->
@@ -81,6 +92,7 @@
             <div class="u-form-send-error u-form-send-message" aria-live="assertive">No se puede enviar su mensaje. Por favor, corrija los errores y vuelva a intentarlo.</div>
           </form>
         </div>
+
 
         <p class="login-helper">
           ¿No tienes cuenta?
@@ -106,6 +118,49 @@
       btn.setAttribute('aria-pressed', isHidden ? 'true' : 'false');
       btn.setAttribute('aria-label', isHidden ? 'Ocultar contraseña' : 'Mostrar contraseña');
     }
+  </script>
+    <script>
+    function togglePassword(idCampo, btn) {
+      const input = document.getElementById(idCampo);
+      const img = btn.querySelector('img');
+      const isHidden = input.type === 'password';
+
+      input.type = isHidden ? 'text' : 'password';
+      img.src = isHidden ? 'images/ojoAbierto.png' : 'images/ojoCerrado.png';
+      img.alt = isHidden ? 'Ocultar contraseña' : 'Mostrar contraseña';
+
+      // Accesibilidad del botón (estado presionado)
+      btn.setAttribute('aria-pressed', isHidden ? 'true' : 'false');
+      btn.setAttribute('aria-label', isHidden ? 'Ocultar contraseña' : 'Mostrar contraseña');
+    }
+
+    // Habilitar/deshabilitar el botón según contenido de email y contraseña
+    (function() {
+      const email = document.getElementById('email');
+      const password = document.getElementById('password');
+      const submitBtn = document.getElementById('login-submit');
+      const form = document.querySelector('#form-login form');
+
+      function updateButtonState() {
+        const emailVal = email.value.trim();
+        const passwordVal = password.value.trim();
+        const emailValid = emailVal !== '' && email.checkValidity();
+        const passwordValid = passwordVal !== '';
+        const enable = emailValid && passwordValid;
+        submitBtn.disabled = !enable;
+        submitBtn.setAttribute('aria-disabled', (!enable).toString());
+      }
+
+      email.addEventListener('input', updateButtonState);
+      password.addEventListener('input', updateButtonState);
+
+      form.addEventListener('submit', function(e) {
+        updateButtonState();
+        if (submitBtn.disabled) e.preventDefault();
+      });
+
+      updateButtonState();
+    })();
   </script>
 </body>
 </html>
