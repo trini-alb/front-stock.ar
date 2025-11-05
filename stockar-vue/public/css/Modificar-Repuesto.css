@@ -1,0 +1,179 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 848px;
+}
+
+.u-section-1 .u-form-1 {
+  height: 758px;
+  margin: 45px 33px 0 385px;
+}
+
+.u-section-1 .u-form-group-3 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-form-group-4 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-form-group-6 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-form-group-7 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-form-group-8 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-form-group-9 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-btn-1 {
+  background-image: none;
+  border-style: solid;
+}
+
+.u-section-1 .u-custom-html-1 {
+  height: auto;
+  min-height: 114px;
+  background-image: none;
+  margin: -548px 775px 434px 20px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-form-1 {
+    width: 749px;
+    margin-right: 0;
+    margin-left: 218px;
+  }
+
+  .u-section-1 .u-custom-html-1 {
+    margin-right: 595px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-form-1 {
+    width: 720px;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-custom-html-1 {
+    margin-right: 375px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-form-1 {
+    width: 540px;
+  }
+
+  .u-section-1 .u-custom-html-1 {
+    margin-right: 195px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-form-1 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-custom-html-1 {
+    margin-right: 0;
+  }
+}
+/* Contenedor del usuario arriba a la derecha */
+/* El header será el referente del posicionamiento */
+#header .u-sheet-1 { position: relative; }   /* <- NUEVO (o #header si preferís) */
+
+/* Contenedor del usuario, anclado dentro del header */
+.menu-usuario{
+  position: absolute;        /* antes: fixed */
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+
+/* Ocultar el checkbox */
+.menu-usuario .toggle-menu{ display: none !important; }
+
+/* Avatar */
+.menu-usuario .icono-usuario img{
+  width: 40px !important;      /* ajustá el tamaño a gusto */
+  height: 40px !important;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  object-fit: cover;           /* recorta si la imagen es grande */
+  display: block;
+  cursor: pointer;
+}
+
+/* Dropdown oculto por defecto */
+.menu-usuario .menu-desplegable{
+  display: none;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 6px);
+  min-width: 160px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,.25);
+  overflow: hidden;
+  padding: 4px 0;
+}
+
+/* Ítem Cerrar sesión */
+.menu-usuario .menu-desplegable a{
+  display: block;
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #111;
+  text-decoration: none;
+}
+.menu-usuario .menu-desplegable a:hover{ background:#f1f1f1; }
+
+/* Mostrar el dropdown al pasar el mouse */
+.menu-usuario:hover .menu-desplegable{ display: block; }
+/* ===== Drawer lateral ===== */
+.drawer{
+  position: fixed; top: 0; left: 0; bottom: 0;
+  width: 280px; max-width: 86vw; height: 100vh;
+  background: #111; color: #fff;
+  transform: translateX(-100%); transition: transform .28s ease;
+  z-index: 12500; display:flex; flex-direction:column;
+  box-shadow: 2px 0 18px rgba(0,0,0,.35);
+}
+.drawer.open{ transform: translateX(0); }
+
+.drawer-head{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:14px 16px; border-bottom:1px solid rgba(255,255,255,.12);
+}
+.drawer-head strong{ font-size:16px; }
+.drawer-close{ background:transparent; color:#fff; border:0; font-size:24px; cursor:pointer; line-height:1; }
+
+.drawer-nav{ padding:10px 8px; display:flex; flex-direction:column; gap:4px; }
+.drawer-nav a{
+  color:#fff; text-decoration:none; font-size:15px;
+  padding:10px 12px; border-radius:6px;
+}
+.drawer-nav a:hover{ background: rgba(255,255,255,.08); }
+
+/* Backdrop */
+.drawer-backdrop{
+  position: fixed; inset:0; background:rgba(0,0,0,.45);
+  z-index:12400; opacity:0; pointer-events:none; transition:opacity .28s ease;
+}
+.drawer-backdrop.show{ opacity:1; pointer-events:auto; }
+
+/* Bloqueo de scroll cuando está abierto */
+html.drawer-open, body.drawer-open{ overflow:hidden; }
+
+/* Aseguramos que el header quede por encima del contenido pero debajo del botón */
+#header{ position: sticky; top:0; z-index:12000; }
