@@ -62,7 +62,7 @@ const routes: RouteRecordRaw[] = [
     component: () => import('@/views/CalcularPrecio.vue'),
     meta: { requiresAuth: true }
   },
-  /*
+  // Rutas de ventas
   {
     path: '/ventas',
     name: 'VentaList',
@@ -81,6 +81,7 @@ const routes: RouteRecordRaw[] = [
     component: () => import('@/views/VentaDetail.vue'),
     meta: { requiresAuth: true }
   },
+  /*
   {
     path: '/usuarios',
     name: 'UsuarioList',

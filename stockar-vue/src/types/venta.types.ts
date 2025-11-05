@@ -27,11 +27,15 @@ export interface Venta {
 }
 
 export interface CreateVentaDto {
-  idEmpleado: number;
-  detalles: {
-    idProducto: number;
+  empleadoId: number;
+  observaciones?: string;
+  total: number;
+  items: Array<{
+    productoId: number;
     cantidad: number;
-  }[];
+    precioUnitario: number;
+    subtotal: number;
+  }>;
 }
 
 export interface UpdateVentaDto extends Partial<CreateVentaDto> {}
